@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            PAYMENT FORM
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <form action="">
+            <h1>PAYMENT METHOD</h1><hr>
+            <p>FirstName: *<input type="text" name="name" required placeholder="Rakshith"></p>
+            <p>LastName: *<input type="text"></p>
+            <fieldset><legend>Gender: *</legend><p>Male<input type="radio" name="gender" id="male"></p><p>Female:<input type="radio" name="gender" id="female"></p><p>Others:<input type="radio" name="gender"></p></fieldset>
+            <p>Email: *<input type="email" name="email" id="email" required></p>
+            <p>Mobile no.: *<input type="number" name="number" id="number" required></p>
+            <legend>Address:</legend><textarea name="address" cols="100" rows="8"></textarea>
+        <hr>
+        <p style="text-align: center ;"><b>Payment Details</b></p>
+        <p>Card-Type:<select name="card_type" id="card_type" required>
+            <option value="">Select_Card-Type_</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="mastercard">mastercard</option>
+        </select></p>
+        <p>Expiry Date:<input type="date" name="date" id="date"></p>
+        <p>CVV:<input type="number" name="cvv" id="cvv" required></p>
+        <input type="submit" name="submit" value="Pay now"><br><br>
+        <input type="reset" name="reset">
+        </form></div>
+    </body>
+</html>
